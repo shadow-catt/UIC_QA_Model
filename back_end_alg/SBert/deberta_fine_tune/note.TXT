@@ -1,0 +1,1 @@
+download from Kaggle. The source of model can be found at https://github.com/PurpleFlow22/UIC-FAQ-chatbot
