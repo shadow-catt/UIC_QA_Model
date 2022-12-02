@@ -174,7 +174,7 @@ def use_model_qa(model_path, QA_path):
 # SBERT_get_reply(model, q, question_list, answer_list, question_embeddings, topk_SBERT, threshold_SBERT)
 
 def SBERT_QA():
-    model_path_list = ['.\SBert\sbert_base_chinese','.\SBert\SBert_CN_fine_tune','.\SBert\sn_xlm_roberta_base','.\SBert\roberta_fine_tune','.\SBert\deberta_v3_base_qa','.\SBert\deberta_fine_tune']
+    model_path_list = ['./SBert/sbert_base_chinese','./SBert/SBert_CN_fine_tune','./SBert/sn_xlm_roberta_base','./SBert/roberta_fine_tune','./SBert/deberta_v3_base_qa','./SBert/deberta_fine_tune']
 
     model_path = '.\SBert\sbert_base_chinese'
     # model_path = '.\SBert\SBert_CN_fine_tune'
@@ -190,7 +190,7 @@ def SBERT_QA():
     mean_time_list = []
 
     for model_name in model_path_list:
-        mean_time = use_model_qa(model_path, QA_path)
+        mean_time = use_model_qa(model_name, QA_path)
         mean_time_list.append(mean_time)
 
     for mean_time_get in mean_time_list:
